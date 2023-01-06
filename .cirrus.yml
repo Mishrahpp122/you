@@ -5,8 +5,8 @@ env:
   TG_TOKEN: ENCRYPTED[!0961b960b9a583cdfb79ea69872cc2c0d19f432982e81e66d597ae8754e56ca291d77c7504126ce9b340b73d5264b6ce!]
   TG_CHAT_ID: ENCRYPTED[!dfa7f4b024b6fe39df76ed8d6276e9e3d2bdc21de92ae1bf2308906cf6560557b869d3148f58487e231c72a5e64358f0!]
   WORKDIR: "/tmp"
-  EMAIL: ENCRYPTED[e0ca201ca6feddee4033e308f1d6b5a3480e78604e1bc3112aa91c545a649cd129b7728b1745133d980c630ef9897152]
-  credentials: ENCRYPTED[cc4d78790578ad8c891a3bfc2eb98e9a9076d1a7cec7ead728ad945625b9e8cddd91076d7af667bd4024ce6995ba6dcb]
+  EMAIL: ENCRYPTED[!e69523a8e3ffb93ad0fa0f9eacdbfc6d816fb5c471da9427f25b37e67b754476f57d549b644fe54e2cdbdad40d239f87!]
+  credentials: ENCRYPTED[!699bccd1c73af2b2312807c117af6a34ba9c003607bc7a88a91da5a21458715ddb6385c2ebfb2fcc130f4962d3b866f6!]
 
 task:
   name: "Build roms"
@@ -21,7 +21,7 @@ task:
      - ./script/load_ccache.sh
 
   Sync-rom_script:
-     - git config --global user.name "Happex7"
+     - git config --global user.name "HAPPEX7"
      - git config --global user.email "$EMAIL"
      - echo "$credentials" > ~/.git-credentials
      - git config --global credential.helper store --file=~/.git-credentials
