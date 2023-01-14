@@ -1,4 +1,4 @@
-.**Ci-Builder**
+.**Ci-uilder**
 
 <img align="center" src="https://github.com/mayankchaudhary26/Cool-Readme-ideas/blob/master/data/multi-screen.gif" />
 <br>    
