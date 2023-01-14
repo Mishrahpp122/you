@@ -6,11 +6,11 @@ env:
   TG_CHAT_ID: ENCRYPTED[!dfa7f4b024b6fe39df76ed8d6276e9e3d2bdc21de92ae1bf2308906cf6560557b869d3148f58487e231c72a5e64358f0!]
   WORKDIR: "/tmp"
   EMAIL: ENCRYPTED[!e69523a8e3ffb93ad0fa0f9eacdbfc6d816fb5c471da9427f25b37e67b754476f57d549b644fe54e2cdbdad40d239f87!]
-  credentials: ENCRYPTED[!699bccd1c73af2b2312807c117af6a34ba9c003607bc7a88a91da5a21458715ddb6385c2ebfb2fcc130f4962d3b866f6!]
+  credentials: ENCRYPTED[!3a18e09e205c8036a6e374389ce62b60a36fcae414d54bb5bb582fce18aa5f944b0dee8a55d18220d0a6774ff8ec92ae!]
 
 task:
   name: "Build roms"
-  only_if: $CIRRUS_REPO_OWNER == 'HAPPEX7'
+  only_if: $CIRRUS_REPO_OWNER == 'Mishrahpp122'
   timeout_in: 120m
   container:
     image: anggit86/ubuntu:22.04
@@ -21,7 +21,7 @@ task:
      - ./script/load_ccache.sh
 
   Sync-rom_script:
-     - git config --global user.name "HAPPEX7"
+     - git config --global user.name "Mishrahpp122"
      - git config --global user.email "$EMAIL"
      - echo "$credentials" > ~/.git-credentials
      - git config --global credential.helper store --file=~/.git-credentials
